@@ -1,0 +1,379 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		537B54791CEDA7A6009F577A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537B54781CEDA7A6009F577A /* AppDelegate.swift */; };
+		537B547E1CEDA7A6009F577A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537B547C1CEDA7A6009F577A /* Main.storyboard */; };
+		537B54801CEDA7A6009F577A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537B547F1CEDA7A6009F577A /* Assets.xcassets */; };
+		537B54831CEDA7A6009F577A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 537B54811CEDA7A6009F577A /* LaunchScreen.storyboard */; };
+		537B54901CEDAEBB009F577A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537B548F1CEDAEBB009F577A /* ViewController.swift */; };
+		8689C3D1705A49130043E8D4 /* Pods_PTTConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A777ADC018C2C7C2CF7671D0 /* Pods_PTTConnect.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27561B79C86FED8E6A4AD6B4 /* Pods-PTTConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTTConnect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PTTConnect/Pods-PTTConnect.debug.xcconfig"; sourceTree = "<group>"; };
+		537B54751CEDA7A6009F577A /* PTTConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PTTConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		537B54781CEDA7A6009F577A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		537B547D1CEDA7A6009F577A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		537B547F1CEDA7A6009F577A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		537B54821CEDA7A6009F577A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		537B54841CEDA7A6009F577A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		537B548A1CEDA933009F577A /* PTTConnect-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PTTConnect-Bridging-Header.h"; sourceTree = "<group>"; };
+		537B548F1CEDAEBB009F577A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		878E2179A442C4999999857D /* Pods-PTTConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PTTConnect.release.xcconfig"; path = "Pods/Target Support Files/Pods-PTTConnect/Pods-PTTConnect.release.xcconfig"; sourceTree = "<group>"; };
+		A777ADC018C2C7C2CF7671D0 /* Pods_PTTConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PTTConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		537B54721CEDA7A6009F577A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8689C3D1705A49130043E8D4 /* Pods_PTTConnect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		424CBC88EF3DEE17834874AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A777ADC018C2C7C2CF7671D0 /* Pods_PTTConnect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		537B546C1CEDA7A6009F577A = {
+			isa = PBXGroup;
+			children = (
+				537B54771CEDA7A6009F577A /* PTTConnect */,
+				537B54761CEDA7A6009F577A /* Products */,
+				AB9378BBEA4489DB20E95017 /* Pods */,
+				424CBC88EF3DEE17834874AF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		537B54761CEDA7A6009F577A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				537B54751CEDA7A6009F577A /* PTTConnect.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		537B54771CEDA7A6009F577A /* PTTConnect */ = {
+			isa = PBXGroup;
+			children = (
+				537B54781CEDA7A6009F577A /* AppDelegate.swift */,
+				537B548A1CEDA933009F577A /* PTTConnect-Bridging-Header.h */,
+				537B548F1CEDAEBB009F577A /* ViewController.swift */,
+				537B547C1CEDA7A6009F577A /* Main.storyboard */,
+				537B547F1CEDA7A6009F577A /* Assets.xcassets */,
+				537B54811CEDA7A6009F577A /* LaunchScreen.storyboard */,
+				537B54841CEDA7A6009F577A /* Info.plist */,
+			);
+			path = PTTConnect;
+			sourceTree = "<group>";
+		};
+		AB9378BBEA4489DB20E95017 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27561B79C86FED8E6A4AD6B4 /* Pods-PTTConnect.debug.xcconfig */,
+				878E2179A442C4999999857D /* Pods-PTTConnect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		537B54741CEDA7A6009F577A /* PTTConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 537B54871CEDA7A6009F577A /* Build configuration list for PBXNativeTarget "PTTConnect" */;
+			buildPhases = (
+				B2D7516F2095C8D341F8165A /* Check Pods Manifest.lock */,
+				537B54711CEDA7A6009F577A /* Sources */,
+				537B54721CEDA7A6009F577A /* Frameworks */,
+				537B54731CEDA7A6009F577A /* Resources */,
+				AFFCE69AD1CA610F92D996EE /* Embed Pods Frameworks */,
+				7C3EC7273E1ECD22ECE626BE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PTTConnect;
+			productName = PTTConnect;
+			productReference = 537B54751CEDA7A6009F577A /* PTTConnect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		537B546D1CEDA7A6009F577A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Yang Tun-Kai";
+				TargetAttributes = {
+					537B54741CEDA7A6009F577A = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 537B54701CEDA7A6009F577A /* Build configuration list for PBXProject "PTTConnect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 537B546C1CEDA7A6009F577A;
+			productRefGroup = 537B54761CEDA7A6009F577A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				537B54741CEDA7A6009F577A /* PTTConnect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		537B54731CEDA7A6009F577A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537B54831CEDA7A6009F577A /* LaunchScreen.storyboard in Resources */,
+				537B54801CEDA7A6009F577A /* Assets.xcassets in Resources */,
+				537B547E1CEDA7A6009F577A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C3EC7273E1ECD22ECE626BE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PTTConnect/Pods-PTTConnect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFFCE69AD1CA610F92D996EE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PTTConnect/Pods-PTTConnect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2D7516F2095C8D341F8165A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		537B54711CEDA7A6009F577A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537B54901CEDAEBB009F577A /* ViewController.swift in Sources */,
+				537B54791CEDA7A6009F577A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		537B547C1CEDA7A6009F577A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				537B547D1CEDA7A6009F577A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		537B54811CEDA7A6009F577A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				537B54821CEDA7A6009F577A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		537B54851CEDA7A6009F577A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		537B54861CEDA7A6009F577A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		537B54881CEDA7A6009F577A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27561B79C86FED8E6A4AD6B4 /* Pods-PTTConnect.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PTTConnect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PTTConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		537B54891CEDA7A6009F577A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 878E2179A442C4999999857D /* Pods-PTTConnect.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PTTConnect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.PTTConnect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		537B54701CEDA7A6009F577A /* Build configuration list for PBXProject "PTTConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537B54851CEDA7A6009F577A /* Debug */,
+				537B54861CEDA7A6009F577A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		537B54871CEDA7A6009F577A /* Build configuration list for PBXNativeTarget "PTTConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537B54881CEDA7A6009F577A /* Debug */,
+				537B54891CEDA7A6009F577A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 537B546D1CEDA7A6009F577A /* Project object */;
+}
