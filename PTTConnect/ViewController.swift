@@ -13,9 +13,9 @@ class ViewController: UIViewController{
 
     var socket: GCDAsyncSocket!
     
-    private let host: String! = "ptt.cc"
-    private let port: UInt16 = 23
-    private let big5 = CFStringConvertEncodingToNSStringEncoding(CFStringEncoding(CFStringEncodings.Big5.rawValue))
+    fileprivate let host: String! = "ptt.cc"
+    fileprivate let port: UInt16 = 23
+    fileprivate let big5 = CFStringConvertEncodingToNSStringEncoding(CFStringEncoding(CFStringEncodings.big5.rawValue))
 
     @IBOutlet weak var accountTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -29,12 +29,12 @@ class ViewController: UIViewController{
         
     }
     
-    @IBAction func enterAction(sender: AnyObject) {
+    @IBAction func enterAction(_ sender: AnyObject) {
         
-        self.socket = GCDAsyncSocket(delegate: self, delegateQueue: dispatch_get_main_queue())
+        self.socket = GCDAsyncSocket(delegate: self, delegateQueue: DispatchQueue.main)
         
         do {
-            try self.socket.connectToHost(host, onPort: port, withTimeout: -1)
+            try self.socket.connect(toHost: host, onPort: port, withTimeout: -1)
             //enter account
             pttCommand(self.accountTextField.text!)
         }
@@ -43,48 +43,48 @@ class ViewController: UIViewController{
         }
     }
     
-    @IBAction func commandAction(sender: AnyObject) {
+    @IBAction func commandAction(_ sender: AnyObject) {
         pttCommand("U")
         pttCommand("i")
     }
-    func pttCommand(command:String){
-        let sendString = command.stringByAppendingString("\r\n")
-        let commandData = sendString.dataUsingEncoding(big5)
+    func pttCommand(_ command:String){
+        let sendString = command + "\r\n"
+        let commandData = sendString.data(using: String.Encoding(rawValue: big5))
         
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue()) {
-            self.socket.writeData(commandData, withTimeout: -1.0, tag: 0)
-            self.socket.readDataWithTimeout(-1.0, tag: 0)
+        let delayTime = DispatchTime.now() + Double(Int64(1 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: delayTime) {
+            self.socket.write(commandData, withTimeout: -1.0, tag: 0)
+            self.socket.readData(withTimeout: -1.0, tag: 0)
         }
         
     }
     
-    func socket(sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
+    func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
         print("connected")
     }
     
-    func socket(sock: GCDAsyncSocket, didReadData data: NSData, withTag tag: Int32){
-        sock.readDataWithTimeout(-1, tag: 0)
-        let response = String(data: data, encoding: big5)
-        print("response:\(response)")
+    func socket(_ sock: GCDAsyncSocket, didReadData data: Data, withTag tag: Int32){
+        sock.readData(withTimeout: -1, tag: 0)
+        let response = String(data: data, encoding: String.Encoding(rawValue: big5))
+        print("response:\(String(describing: response))")
         
         
-        if response?.rangeOfString("請輸入您的密碼") != nil{
+        if response?.range(of: "請輸入您的密碼") != nil{
             pttCommand(self.passwordTextField.text!)
-        }else if response?.rangeOfString("您想刪除其他重複登入的連線嗎") != nil{
+        }else if response?.range(of: "您想刪除其他重複登入的連線嗎") != nil{
             pttCommand("n")
-        }else if response?.rangeOfString("請按任意鍵繼續") != nil{
+        }else if response?.range(of: "請按任意鍵繼續") != nil{
             //continue command
             pttCommand("")
             pttCommand("u")
             pttCommand("i")
-        }else if response?.rangeOfString("您要刪除以上錯誤嘗試的記錄嗎") != nil{
+        }else if response?.range(of: "您要刪除以上錯誤嘗試的記錄嗎") != nil{
             pttCommand("y")
-        }else if response?.rangeOfString("代號暱稱") != nil{
-            let start = response?.rangeOfString("登入次數")?.endIndex
-            let end = response?.rangeOfString(" 次")?.startIndex
-            dispatch_async(dispatch_get_main_queue(), {
-                self.loginTimeLabel.text = response?.substringWithRange(Range<String.Index>(start!..<end!))
+        }else if response?.range(of: "代號暱稱") != nil{
+            let start = response?.range(of: "登入次數")?.upperBound
+            let end = response?.range(of: " 次")?.lowerBound
+            DispatchQueue.main.async(execute: {
+                self.loginTimeLabel.text = response?.substring(with: Range<String.Index>(start!..<end!))
             })
             
 
